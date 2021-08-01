@@ -1,0 +1,30 @@
+TreeSet特点：
+	元素有序，会按照一定顺序排序，排序规则取决于构造方法
+		TreeSet:根据自然排序进行排序
+		TreeSet(Comparator comparator):根据指定比较器进行排序
+	没有带索引的方法，不能使用普通for循环
+	不包含重复的元素 
+	
+	自然排序Comparable的使用
+			无参构造方法，用TreeSet集合存储自定义对象，对象的类必须实现 Comparable，重写 compareTo 方法
+			public class Student implements comparable<Student>{
+					@Override
+					public int compareTo(){
+						int num = this.age - s.age;
+						int num2 = num == 0?this.name.compareTo(s.name):num;
+						return num2;
+					}				
+			}		
+			注：compareTo [比较此对象与指定对象的顺序。如果该对象小于、等于或大于指定对象，则分别返回负整数、零或正整数。]
+	
+	比较器排序Comparator的使用
+			TreeSet(Comparator<? super E> comparator) 
+			需要传入一个实现Comparator接口的实现类，这里可以使用匿名内部类的形式来实现
+			TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>(){
+				@Override
+				public int compare(Student s1,Student s2){
+					int num1 = s1.getAge - s2.getAge;
+					int num2 = num1==0?s1.getName().compareTo(s2.getName()):num1;
+					return num2;
+				}
+			});

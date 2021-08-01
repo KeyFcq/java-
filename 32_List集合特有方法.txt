@@ -1,0 +1,5 @@
+List集合特有方法：
+	add(index,element)		在指定索引位置插入元素(父类Colletion只能顺序插入)
+	remove(index)					通过索引删除指定元素(父类Collection只能通过元素值删除)
+	set(index,element)		通过索引修改指定位置元素值
+	get(index)						通过索引获取指定元素值

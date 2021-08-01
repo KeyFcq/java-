@@ -1,0 +1,16 @@
+ForEach格式：
+	for(元素数据类型 变量:数组或Collection集合){
+		此处可直接使用变量
+	}
+	
+ForEach内部原理是一个Iterator迭代器
+	案例：
+		List<String> list = new ArrayList<String>();
+		list.add("hello");
+		list.add("world");
+		list.add("java");
+		for(String s:list){
+			if(s.equals("world")){
+				list.add("javaee");		//ConcurrentModificationException		当前修改异常
+			}
+		}

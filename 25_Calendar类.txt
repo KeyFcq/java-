@@ -1,0 +1,11 @@
+Calendar类：提供日历和日期的方法
+
+构造方法：
+	Calendar()															构建默认时区和默认格式的日历
+	Calendar(TimeZone zone,Looale aLocale)	构建具有指定时区和区域设置的日历
+	
+方法：
+	getInstance()								获取Calendar的对象(实际是通过多态的形式创建子类的形式赋值给父类)
+	get()												获取对象的属性
+	add(int field,int amount)		对field(年、月、日)添加或者减去 amount
+	set(year,month-1,date)       设置日历的年月日，月份是从0开始的，设置时候11月表示就是12月，取出时候要加一个月

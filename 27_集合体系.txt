@@ -1,0 +1,15 @@
+集合类的特点：存储空间可变(集合里的内容在内存可能不连续)
+
+体系结构：
+	Collection：单列集合
+		List：可重复
+			ArrayList
+			LinkedList
+		Set：	不可重复
+			HashSet
+			TreeSet
+			
+	Map：双列集合
+	
+	
+注；集合存的是引用类型，不要存int或者其他基础数据类型

@@ -1,0 +1,7 @@
+哈希值：是JDK根据对象地址或者字符串或者数字算出来的int类型的数值
+
+hashCode 	Object类获取哈希值的方法
+
+对象的哈希值特点：
+	同一个对象多次调用hashCode 返回的哈希值相同
+	默认情况，不同对象的哈希值不同，但是可以重写hashCode，实现不同对象hashCode相同(String 中的 "重地"和"通化" hashCode  相同)

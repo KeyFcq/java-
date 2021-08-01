@@ -1,0 +1,9 @@
+Collection集合的常用方法：
+	add					添加元素
+	remove			移除元素(通过元素内容移除集合中指定集合的元素)
+	clear				清空元素
+	contains		判断是否存在指定元素
+	isEmpty			判读集合是否为空
+	size				集合元素个数
+	
+	

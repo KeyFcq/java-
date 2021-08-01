@@ -1,0 +1,25 @@
+并发修改异常
+	ConcurrentModificationException
+	
+案例：
+	List<String> list = new ArrayList<String>();
+	list.add("hello");
+	list.add("world");
+	list.add("java");
+	Iterator<String> it = list.iterator();
+	while(it.hasNext()){
+		String s = it.next();
+		if(s.equals("world")){
+			list.add("javaee");
+		}
+	}
+	
+	
+产生原因(Collection的方法Iterator)：
+	迭代器遍历过程中，通过集合对象对集合元素进行增、删，造成迭代器获取元素中判断预期修改值和实际值不一样
+	
+	注：List中的迭代器 ListIterator 不会有这个问题
+	
+	
+解决方案：
+	用for循环遍历，然后用集合对象做对应操作即可

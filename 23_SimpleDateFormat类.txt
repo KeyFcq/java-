@@ -1,0 +1,28 @@
+SimpleDateFormat：
+	构造方法：
+		public SimpleDateFormat()									使用默认模式和日期格式
+		public SimpleDateFormat(String pattern)		给定模式的日期格式
+
+	方法：
+		format(Date date)  												①格式化日期为指定格式字符串;
+		parse(String string)											②将指定格式字符串转换为日期;
+	
+	
+	y		    年		
+	M		    月
+	d		    日
+	H		    时
+	m		    分
+	s		    秒
+	
+		//格式化
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String s = sdf.format(d);
+		System.out.println(s);		
+		
+		//字符转成日期
+		String s1 = "2020年10月1日 12:15:30";
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
+		Date d2 = sdf1.parse(s1);
+		System.out.println(d2); 

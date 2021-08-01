@@ -1,0 +1,3 @@
+List集合子类：ArrayList, LinkedList
+	ArrayList:查询快，增删慢(基于数组实现的)
+	LinkedList:查询慢，增删快(基于链表实现的)

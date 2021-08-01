@@ -1,0 +1,8 @@
+LinkedList集合特有的方法：
+	addFirst			列表开始位置插入元素
+	addLast				列表最后位置插入元素
+	getFirst			获取列表开始元素
+	getLast				获取列表结尾元素
+	removeFirst		删除列表开始元素
+	removeLast		删除列表最后元素
+	

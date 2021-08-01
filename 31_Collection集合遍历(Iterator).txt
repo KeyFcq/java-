@@ -1,0 +1,23 @@
+Collection集合遍历：
+方法：
+	Iterator		返回一个迭代器类Iterator		
+	
+Iterator的方法：
+	hasNext			返回一个boolean，判断迭代器里是否有元素
+	Next				返回迭代器里面的当前指针指向的元素，每次调用指针往前进一位	
+	
+		// 使用迭代器遍历集合
+		ArrayList<String> al = new ArrayList();
+		al.add("as");
+		al.add("bs");
+		al.add("cs");
+		al.add("ds");
+		al.add("es");
+		Iterator<String> it = al.iterator();
+		
+		//if (it.hasNext()) System.out.println(it.next());
+		while(it.hasNext()) System.out.println(it.next());		
+
+Collection的子接口List有get(index)方法，可以通过 for循环来遍历集合
+		
+	

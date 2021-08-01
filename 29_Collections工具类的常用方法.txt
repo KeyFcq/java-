@@ -1,0 +1,8 @@
+Collections工具类
+	
+	排序操作：
+		sort										升序
+		sort(list,comparator)		定制排序
+		reverse									反转
+		shuffle									洗牌
+		rotate(list,distance)	  旋转 (distance>0,list后distance个元素移到前面; distance<0,list前distance个元素移到后面)

@@ -1,0 +1,12 @@
+ListIterator：
+	通过List集合的listIterator方法得到，所以说是List特有的迭代器
+	可以允许沿任一方向遍历列表的迭代器，迭代期间修改列表，并获取列表中迭代器当前位置
+	
+ListIterator方法：
+	next					返回下一个
+	hasNext				还有没有更多元素
+	
+父类Iterator没有的方法：
+	previous			返回上一个
+	hasPrevious		如果此列表迭代器在相反方向遍历列表时有更多元素，则返回true
+	add						指定元素插入列表
